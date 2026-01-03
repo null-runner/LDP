@@ -119,11 +119,14 @@ def load_meta_csvs(ads_file, adsets_file, campaigns_file):
     return result
 
 
-@st.cache_data(ttl=300)  # Cache for 5 minutes
+@st.cache_data(ttl=86400)  # Cache for 24 hours (daily refresh)
 def refresh_airtable_data(api_key, base_id):
     """
     Fetch latest candidature and calls from Airtable.
-    Cached to avoid rate limits.
+    Cached daily to avoid rate limits and unnecessary API calls.
+
+    Data is ONLY stored in Streamlit's in-memory cache, NOT on disk.
+    Cache expires daily or when manually cleared via Streamlit UI.
 
     Args:
         api_key: Airtable API key
@@ -141,15 +144,8 @@ def refresh_airtable_data(api_key, base_id):
         candidature = candidature_table.all()
         calls = calls_table.all()
 
-        # Save to JSON for compatibility with existing scripts
-        data_dir = Path(__file__).parent.parent / "data"
-        data_dir.mkdir(exist_ok=True)
-
-        with open(data_dir / 'candidature_full.json', 'w') as f:
-            json.dump({'records': candidature}, f)
-
-        with open(data_dir / 'calls_full.json', 'w') as f:
-            json.dump({'records': calls}, f)
+        # Data is ONLY in Streamlit cache (RAM), NOT written to disk
+        # This ensures no business data persists locally or in repository
 
         return {
             'candidature': candidature,
