@@ -14,12 +14,14 @@ def check_authentication():
     Returns:
         Tuple: (authenticated, username)
     """
-    # Load credentials from secrets
+    # Load credentials from secrets (streamlit-authenticator 0.4.x format)
     credentials = {
         'usernames': {
             st.secrets["auth"]["username"]: {
-                'name': st.secrets["auth"]["name"],
-                'password': st.secrets["auth"]["password_hash"]
+                'email': st.secrets["auth"]["email"],
+                'first_name': st.secrets["auth"]["first_name"],
+                'last_name': st.secrets["auth"]["last_name"],
+                'password': st.secrets["auth"]["password"]  # Can be plain text, library hashes it
             }
         }
     }
