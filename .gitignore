@@ -1,0 +1,29 @@
+# Environment variables - MAI COMMITTARE
+.env
+.env.local
+.env.*.local
+
+# Cache data
+data/*_cache.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+.venv/
+venv/
+
+# Reports temporanei
+reports/*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit secrets (NEVER commit!)
+.streamlit/secrets.toml
+
+# Uploaded CSV files
+data/meta_exports/*.csv

@@ -1,0 +1,191 @@
+{
+  "period": "28d",
+  "date_start": "2025-11-17",
+  "date_end": "2025-12-14",
+  "meta_totals": {
+    "spend": 12629.69,
+    "impressions": 2271114,
+    "reach": 876515
+  },
+  "campaigns": [
+    {
+      "name": "Test LDP",
+      "spend": 7740.41,
+      "impressions": 1079820,
+      "reach": 440423
+    },
+    {
+      "name": "RET | video lungo",
+      "spend": 556.24,
+      "impressions": 276123,
+      "reach": 111164
+    },
+    {
+      "name": "RET | video lungo - F",
+      "spend": 556.3,
+      "impressions": 272268,
+      "reach": 128059
+    },
+    {
+      "name": "RET | CBO | 25% VV video lungo > VSL",
+      "spend": 278.23,
+      "impressions": 75640,
+      "reach": 48134
+    },
+    {
+      "name": "CBO | cold | scaling",
+      "spend": 3498.51,
+      "impressions": 567263,
+      "reach": 354458
+    }
+  ],
+  "views": {
+    "conservative": {
+      "name": "Conservativa (Meta + 50% vuoto)",
+      "candidature": 1923,
+      "calls": 517,
+      "show_ups": 107,
+      "closures": 25,
+      "revenue": 25880.102941176476,
+      "metrics": {
+        "CPL": 6.57,
+        "CPC": 24.43,
+        "CPSU": 118.03,
+        "CPCl": 505.19,
+        "ROAS": 2.05,
+        "show_up_rate": 20.7,
+        "close_rate": 23.4,
+        "revenue": 25880.1
+      }
+    },
+    "panoramic": {
+      "name": "Panoramica (Meta + 100% vuoto)",
+      "candidature": 1936,
+      "calls": 520,
+      "show_ups": 109,
+      "closures": 25,
+      "revenue": 25880.102941176476,
+      "metrics": {
+        "CPL": 6.52,
+        "CPC": 24.29,
+        "CPSU": 115.87,
+        "CPCl": 505.19,
+        "ROAS": 2.05,
+        "show_up_rate": 21.0,
+        "close_rate": 22.9,
+        "revenue": 25880.1
+      }
+    },
+    "other_sources": {
+      "candidature": {
+        "Instagram": 133,
+        "Telegram": 8
+      },
+      "calls": {
+        "Instagram": 49,
+        "Telegram": 3
+      },
+      "show_ups": {
+        "Instagram": 20,
+        "Telegram": 1
+      },
+      "closures": {
+        "Instagram": 9
+      }
+    }
+  },
+  "source_breakdown": {
+    "candidature": {
+      "meta": {
+        "count": 1909,
+        "pct": 91.9
+      },
+      "vuoto": {
+        "count": 27,
+        "pct": 1.3
+      },
+      "altri": {
+        "Instagram": 133,
+        "Telegram": 8
+      },
+      "altri_total": 141
+    },
+    "calls": {
+      "meta": {
+        "count": 513,
+        "pct": 89.7
+      },
+      "vuoto": {
+        "count": 7,
+        "pct": 1.2
+      },
+      "altri": {
+        "Instagram": 49,
+        "Telegram": 3
+      },
+      "altri_total": 52
+    }
+  },
+  "top_adsets": [
+    {
+      "name": "M/F_25-45_ADV+:  best creative",
+      "campaign": "CBO | cold | scaling",
+      "spend": 3498.51,
+      "impressions": 567263
+    },
+    {
+      "name": "M/F_25-45_ADV+: HOOK_NEMMENO_500\u20acSUL_CONTO+_VIDEO_AD_3K_AL_MESE_DA_CASA_CON_60_O_90_MINUTI_AL_GIORNO_V - Copy",
+      "campaign": "Test LDP",
+      "spend": 1111.93,
+      "impressions": 108109
+    },
+    {
+      "name": "M/F_25-45_ADV+:  VIDEO_AD_ALESSIA_PASCARELLA_+_ANTONIO_MALINGONICO_N - Copy",
+      "campaign": "Test LDP",
+      "spend": 834.23,
+      "impressions": 165831
+    },
+    {
+      "name": "M/F_25-45_ADV+:  VIDEO_AD_ALESSIA_PASCARELLA_-_LANCIO_2_STORE_N - Copy",
+      "campaign": "Test LDP",
+      "spend": 834.16,
+      "impressions": 182156
+    },
+    {
+      "name": "M/F_25-45_ADV+:  BOX_DOMANDE - Copia  pixel",
+      "campaign": "Test LDP",
+      "spend": 833.23,
+      "impressions": 77342
+    },
+    {
+      "name": "50% ads view 90 days",
+      "campaign": "RET | video lungo - F",
+      "spend": 556.3,
+      "impressions": 272268
+    },
+    {
+      "name": "50% ads view 90 days",
+      "campaign": "RET | video lungo",
+      "spend": 556.24,
+      "impressions": 276123
+    },
+    {
+      "name": "M/F_25-45_ADV+: Video_ad_educational - Copy",
+      "campaign": "Test LDP",
+      "spend": 417.43,
+      "impressions": 70554
+    },
+    {
+      "name": "M/F_25-45_ADV+: ad_3",
+      "campaign": "Test LDP",
+      "spend": 417.0,
+      "impressions": 61251
+    },
+    {
+      "name": "M/F_25-45_ADV+: CHIARA_MAZZETTO_+_BODY_VIDEO_AD_3K_AL_MESE_DA_CASA_CON_60_O_90_MINUTI_AL_GIORNO",
+      "campaign": "Test LDP",
+      "spend": 416.77,
+      "impressions": 24779
+    }
+  ]
+}
