@@ -123,6 +123,24 @@ def render_main_dashboard(period_data, funnel, creative, setters, closers):
         fig = create_funnel_chart(funnel)
         st.plotly_chart(fig, use_container_width=True)
 
+        # Spiegazione metriche funnel
+        with st.expander("ℹ️ Cosa significano le percentuali?"):
+            st.markdown("""
+            **% of initial** (% del totale iniziale)
+            - Percentuale rispetto alle Candidature iniziali
+            - Esempio: 30 Show Up su 100 Candidature = 30% of initial
+            - Utile per: Capire quante persone arrivano fino a quel punto dall'inizio
+
+            **% of previous** (% dello step precedente)
+            - Percentuale rispetto allo step immediatamente prima
+            - Esempio: 30 Show Up su 50 Calls = 60% of previous
+            - Utile per: **Conversion rate tra step consecutivi** (dove perdi più gente)
+
+            **% of total** (% del totale)
+            - Uguale a "% of initial"
+            - Percentuale sul totale delle Candidature iniziali
+            """)
+
     with col2:
         st.subheader("Metriche Chiave")
         st.metric("Candidature", f"{funnel.get('candidature', 0):,}")

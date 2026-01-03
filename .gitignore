@@ -25,5 +25,10 @@ Thumbs.db
 # Streamlit secrets (NEVER commit!)
 .streamlit/secrets.toml
 
-# Uploaded CSV files
-data/meta_exports/*.csv
+# Uploaded CSV files and business data
+data/meta_exports/**/*.csv
+data/*.csv
+data/*.json
+analysis/*.json
+reports/*.json
+repomix-output.txt

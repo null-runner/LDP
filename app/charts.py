@@ -30,13 +30,15 @@ def create_funnel_chart(funnel_data):
         x=values,
         textposition="inside",
         textinfo="value+percent initial",
+        textfont={"size": 16},  # Font più grande per leggibilità
         marker={"color": ["#3498db", "#2ecc71", "#f39c12", "#e74c3c"]}
     ))
 
     fig.update_layout(
         title="Funnel Conversione",
         height=400,
-        showlegend=False
+        showlegend=False,
+        font={"size": 14}  # Font globale più grande
     )
 
     return fig
